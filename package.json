@@ -1,0 +1,16 @@
+{
+  "name": "myapp",
+  "version": "0.0.0",
+  "scripts": {
+    "install": "napa",
+    "build": "browserify -t brfs app/app.js -o public/bundle.js",
+    "start": "cd public && w3"
+  },
+  "napa": {
+    "angular": "angular/bower-angular",
+    "angular-route": "angular/bower-angular-route"
+  },
+  "devDependencies": {
+    "brfs": "latest"
+  }
+}
